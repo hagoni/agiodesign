@@ -1,0 +1,45 @@
+@import url('sns_modal.css');
+
+.tabmenu li:first-child a{background-image:url('../img/med_tab1.png')}
+.tabmenu li:last-child a{background-image:url('../img/med_tab2.png')}
+
+.sns_title{font-size:1rem;color:#7d7b7c}
+.sns_title em{color:#00990d}
+
+@media screen and (max-width: 640px) {
+    .sns_title{font-size:0.75rem}
+}
+
+/* video */
+.video_view_container{position:relative;margin-bottom:30px;border-bottom:1px solid #ddd}
+.video_view_container .fix_box{position:relative;height:0;padding-top:56.25%}
+.video_view_container .fix_fit{position:absolute;top:0;left:0;right:0;bottom:0;max-width:100%}
+.video_title{margin:0 40px;color:#fff;line-height:80px}
+.video-btns{opacity:0.6;position:absolute;bottom:0;width:25px;height:80px;background-repeat:no-repeat;background-position:center;text-indent:-10000px}
+.video-btns:hover{opacity:1}
+.video-prev{left:0;background-image:url('../img/btn_prev.png')}
+.video-next{right:0;background-image:url('../img/btn_next.png')}
+
+.grid_list:after{content:'';display:block;clear:both}
+.grid_list > li{position:relative;float:left;width:260px;margin:0 20px 10px 0}
+.grid_list > li.last_col{margin-right:0}
+.grid_list > li > a{display:block;position:relative}
+.grid_img_area{position:relative;padding-top:70%;background-repeat:no-repeat;background-position:center;background-size:cover}
+.grid_img_area > img{width:100%}
+.grid_txt_area{position:relative;height:50px;margin:0 10px;line-height:55px;color:#fff;text-align:center}
+
+@media screen and (max-width:1260px) {
+    .grid_list li{width:32%;margin:2% 0 0 2%}
+	.grid_list li:nth-child(3n+1){clear:both}
+	.grid_list li:nth-child(1), .grid_list li:nth-child(2), .grid_list li:nth-child(3){margin-top:0}
+	.grid_list li:nth-child(3n-2){margin-left:0}
+	.grid_txt_area{height:40px;font-size:0.75rem;line-height:40px}
+}
+
+@media screen and (max-width:640px) {
+    .video_title{margin:0 4%;font-size:0.75rem;line-height:40px}
+    .grid_list li{width:49%;margin:2% 0 0 2%}
+	.grid_list li:nth-child(1), .grid_list li:nth-child(2){margin-top:0}
+	.grid_list li:nth-child(odd){margin-left:0;clear:both}
+	.grid_txt_area{height:30px;line-height:30px}
+}

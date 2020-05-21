@@ -1,0 +1,167 @@
+<?php
+include_once('../inc/top.php');
+?>
+<style>
+/* layer1 */
+.layer1{padding-top:50px;padding-bottom:80px}
+.ceo_img img{width:100%}
+.layer1 .title{padding:50px 0 10px}
+.layer1 .text{padding:40px 0 50px}
+.layer1 li{margin-bottom:26px;font-family:'NotoSansKR-Light';font-size:0.875rem;letter-spacing:-0.025em;color:#aaa9a9}
+.layer1 li:last-child{margin-bottom:0}
+.layer1 li span{display:inline-block;vertical-align:bottom}
+.layer1 .cn{margin-right:12px}
+.layer1 .cn1{width:40.625vw}
+.layer1 .cn2{width:40.625vw}
+.layer1 .cn3{width:41.875vw}
+
+/* layer2 */
+.layer2{padding:74px 0;background-color:#222}
+.layer2 .title{padding-bottom:48px}
+.layer2 li{margin-bottom:26px}
+.layer2 li:last-child{margin-bottom:0}
+.layer2 .year{width:100px;font-family:'NotoSansKR-Bold';font-size:1.125rem;letter-spacing:-0.025em;color:#fff}
+.layer2 .text{position:relative;width:calc(100% - 100px)}
+.layer2 .text:before{content:'';position:absolute;left:-12px;top:9px;width:5px;height:5px;border-radius:50%;background-color:#fff}
+
+/* layer3 */
+.layer3 .title{position:absolute;left:0;top:76px}
+.org_img{display:none}
+.org_320{display:block;width:280px;margin:0 auto}
+
+/* media query */
+@media screen and (min-width:768px){
+    .inner{width:650px}
+
+    /* layer1 */
+    .layer1{padding-top:0;padding-bottom:150px;margin-top:-20px}
+    .ceo_img{float:left;width:50%}
+    .right_area{float:right;width:50%;padding-left:30px;box-sizing:border-box}
+    .layer1 .title{padding:0 0 10px}
+    .layer1 .text{padding:30px 0 0;line-height:163%}
+    .layer1 ul{clear:both;padding-top:140px;text-align:center}
+    .layer1 li{margin-bottom:0;margin-left:22px;font-size:1rem}
+    .layer1 li:first-child{margin-left:0}
+    .layer1 .cn1{width:129px}
+    .layer1 .cn2{width:131px}
+    .layer1 .cn3{width:135px}
+
+    /* layer2 */
+    .layer2{padding:150px 0 245px}
+    .layer2 .title{padding-bottom:194px}
+    .layer2 ul{height:50px;background-repeat:no-repeat;background-position:center;background-size:cover;background-image:url('../img/page/about/hist_bar_768.jpg');font-size:0;line-height:0}
+    .layer2 ul > *{display:inline-block}
+    .layer2 li{position:relative;margin-bottom:0;margin-left:115px}
+    .layer2 li:first-child{margin-left:30px}
+    .layer2 .text{position:absolute;width:auto;left:50%;margin-left:20px;white-space:nowrap}
+    .layer2 li:nth-child(odd) .text{top:-98px}
+    .layer2 li:nth-child(even) .text{left:auto;right:50%;margin-left:0;margin-right:20px;top:auto;bottom:-98px}
+    .layer2 .year{position:relative;width:auto;font-size:1.25rem;line-height:50px}
+    .layer2 .year:before{content:'';position:absolute;left:50%;width:1px;height:88px;background-color:rgba(255,255,255,0.2)}
+    .layer2 li:nth-child(odd) .year:before{top:-88px}
+    .layer2 li:nth-child(even) .year:before{top:auto;bottom:-88px}
+    .layer2 .text:before{left:-24px;width:9px;height:9px}
+    .layer2 li:nth-child(even) .text:before{left:auto;right:-25px}
+
+    /* layer3 */
+    .layer3 .title{top:144px}
+    .org_320{display:none}
+    .org_768{display:block}
+}
+@media screen and (min-width:1080px){
+    .inner{width:920px}
+
+    /* layer1 */
+    .layer1{margin-top:0}
+    .right_area{padding-left:80px}
+    .layer1 .title{padding:50px 0 20px}
+    .layer1 .text{padding:40px 0 0}
+    .layer1 .cn1{width:203px}
+    .layer1 .cn2{width:205px}
+    .layer1 .cn3{width:209px}
+
+    /* layer2 */
+    .layer2 li{margin-left:207px}
+
+    /* layer3 */
+    .org_768{display:none}
+    .org_1080{display:block}
+}
+@media screen and (min-width:1260px){
+    .inner{width:1140px}
+
+    /* layer1 */
+    .right_area{padding-left:150px}
+    .layer1 .title{padding:114px 0 20px}
+    .layer1 .text{padding:50px 0 0}
+    .layer1 li{margin-left:55px}
+    .layer1 .cn1{width:259px}
+    .layer1 .cn2{width:261px}
+    .layer1 .cn3{width:265px}
+
+    /* layer2 */
+    .layer2 li{margin-left:278px}
+
+    /* layer3 */
+    .org_1080{display:none}
+    .org_1260{display:block}
+}
+</style>
+        <!-- layer1 start -->
+        <div class="layer1 inner over_h">
+            <div class="ceo_img"><img src="<?=$root?>/img/page/about/ceo_img.jpg" alt=""></div>
+            <div class="right_area">
+                <p class="title">AGIO <br class="br_pc">DESIGN</p>
+                <p class="stitle">사람을 담는 공간</p>
+                <p class="text">
+                    아지오 디자인은 공간의 본질에 집중합니다.<br><br>
+
+                    공간 디자인은 이용자의 취향과 특성을 <br class="br_pc">끊임없이 연구하고 고민해야합니다.<br><br>
+
+                    시간과 함께 변화하는 이용자의 취향을 <br class="br_pc">반영한 공간구성, 아지오디자인이 제안하는 <br class="br_pc">차별화된 공간, 차별화된 결과를 만들어냅니다.
+                </p>
+            </div>
+            <ul class="fs_def">
+                <li><span class="cn1 cn"><img src="<?=$root?>/img/page/about/cn1.png" alt="공간" class="w100"></span><span>공간</span></li>
+                <li><span class="cn2 cn"><img src="<?=$root?>/img/page/about/cn2.png" alt="철학" class="w100"></span><span>철학</span></li>
+                <li><span class="cn3 cn"><img src="<?=$root?>/img/page/about/cn3.png" alt="가치" class="w100"></span><span>가치</span></li>
+            </ul>
+        </div>
+        <!-- //layer1 end -->
+        <!-- layer2 start -->
+        <div class="layer2">
+            <div class="inner">
+                <p class="title wt">HISTORY</p>
+                <ul>
+                    <li class="fs_def">
+                        <p class="year">2002년</p>
+                        <p class="text wt">아지오디자인 설립<br class="br_m">(교육 공간 전문 디자인)</p>
+                    </li>
+                    <li class="fs_def">
+                        <p class="year">2008년</p>
+                        <p class="text wt">아지오디자인 법인 전환</p>
+                    </li>
+                    <li class="fs_def">
+                        <p class="year">2016년</p>
+                        <p class="text wt">플랜에이 브랜드 론칭</p>
+                    </li>
+                    <li class="fs_def">
+                        <p class="year">~ 현재</p>
+                        <p class="text wt">플랜에이 독서실 스터디카페 38개 지점</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //layer2 end -->
+        <!-- layer3 start -->
+        <div class="layer3 inner">
+            <p class="title">ORG <br class="br_pc">CHART</p>
+            <div class="org_320 org_img"><img src="<?=$root?>/img/page/about/org_320.png" alt="" class="w100"></div>
+            <div class="org_768 org_img"><img src="<?=$root?>/img/page/about/org_768.png" alt="" class="w100"></div>
+            <div class="org_1080 org_img"><img src="<?=$root?>/img/page/about/org_1080.png" alt="" class="w100"></div>
+            <div class="org_1260 org_img"><img src="<?=$root?>/img/page/about/org_1260.png" alt="" class="w100"></div>
+        </div>
+        <!-- //layer3 end -->
+<?php
+include_once('../inc/bottom.php');
+?>

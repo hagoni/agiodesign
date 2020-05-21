@@ -1,0 +1,28 @@
+/* sub_visual */
+.sub_visual{height:200px;text-align:center;box-sizing:border-box}
+.sub_visual .sub_title{padding-top:130px;font-family:'Roboto-Bold';font-size:2.8125rem;color:#2d2d2d}
+
+@media screen and (min-width:768px){
+    .sub_visual{height:438px}
+    .sub_visual .sub_title{padding-top:200px;font-size:5rem}
+}
+@media screen and (min-width:1080px){
+    .sub_visual .sub_title{font-size:5.625rem}
+}
+
+/* text */
+.title{font-family:'Roboto-Bold';font-size:2.1875rem;line-height:100%;color:#2d2d2d}
+.stitle{font-family:'NotoSansKR-Bold';font-size:1rem;color:#2d2d2d}
+.text{font-family:'NotoSansKR-Light';font-size:0.875rem;line-height:171%;letter-spacing:-0.025em;color:#777}
+.wt{color:#fff}
+.br_pc{display:none}
+@media screen and (min-width:768px){
+    .title{font-size:3.75rem}
+    .stitle{font-size:1.25rem}
+    .text{font-size:1rem}
+    .br_pc{display:block}
+    .br_m{display:none}
+}
+@media screen and (min-width:1080px){
+    .title{font-size:4.375rem}
+}

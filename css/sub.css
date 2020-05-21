@@ -1,0 +1,63 @@
+/* sub_visual */
+.sub_visual{min-height:200px;text-align:center;box-sizing:border-box}
+.sub_visual .sub_title{padding-top:130px;font-family:'Roboto-Bold';font-size:2.8125rem;color:#2d2d2d}
+
+@media screen and (min-width:768px){
+    .sub_visual{height:438px}
+    .sub_visual .sub_title{padding-top:200px;font-size:5rem}
+}
+@media screen and (min-width:1080px){
+    .sub_visual .sub_title{font-size:5.625rem}
+}
+@media screen and (min-width:1260px){
+    .sub_visual .sub_title{font-size:5rem}
+}
+
+/* text */
+.title{font-family:'Roboto-Bold';font-size:2.1875rem;line-height:100%;color:#2d2d2d}
+.stitle{font-family:'NotoSansKR-Bold';font-size:1rem;color:#2d2d2d}
+.text{font-family:'NotoSansKR-Light';font-size:0.875rem;line-height:171%;letter-spacing:-0.025em;color:#777}
+.wt{color:#fff}
+.br_pc{display:none}
+.header .hd_sns{top:81px}
+
+@media screen and (min-width:768px){
+    .header .hd_sns{display:none}
+    .header .hd_sns.hd_sns_sub{display:block}
+    .title{font-size:3.75rem}
+    .stitle{font-size:1.25rem}
+    .text{font-size:1rem}
+    .br_pc{display:block}
+    .br_m{display:none}
+}
+@media screen and (min-width:1080px){
+    .title{font-size:4.375rem}
+}
+
+.lnb{padding:10px 0 32px;max-width:280px;margin:0 auto}
+.lnb li{margin-left:36px;margin-bottom:10px}
+.lnb li:first-child{margin-left:0}
+.lnb li a{position:relative;font-family:'Roboto-Medium';font-size:0.875rem;letter-spacing:0.05em;color:#777}
+.lnb li.on a, .lnb li a:hover{color:#2d2d2d}
+
+@media screen and (min-width:768px){
+    .lnb{position:absolute;left:0;top:323px;width:100%;max-width:100%}
+    .lnb li{margin-left:48px}
+    .lnb li:nth-child(3){margin-left:48px}
+    .lnb li a{font-size:1rem}
+}
+@media screen and (min-width:1080px){
+    .lnb li a{font-size:1.125rem}
+}
+
+.tabmenu{padding-bottom:50px;text-align:center}
+.tabmenu li{width:140px;height:40px}
+.tabmenu li a{display:block;width:100%;height:100%;border:1px solid #afafaf;font-family:'NotoSansKR-Bold';font-size:1rem;letter-spacing:-0.025em;line-height:38px;color:#777;box-sizing:border-box}
+.tabmenu li.on a{background-color:#2d2d2d;color:#fff}
+@media screen and (min-width:768px){
+    .tabmenu li{width:300px;height:60px}
+    .tabmenu li a{line-height:58px}
+}
+@media screen and (min-width:1080px){
+    .tabmenu li{width:460px}
+}
